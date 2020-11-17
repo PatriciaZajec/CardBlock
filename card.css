@@ -1,0 +1,31 @@
+.test {
+background-color:white;
+height:100%;
+align-items: center;
+	display: flex;
+	justify-content: center;
+
+}
+
+.test > div {
+	width:400px;
+	height:500px;
+	margin:30px;
+	background-color: rgba(232,232,232, 0.4);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (max-width:800px) {
+	.test {
+		flex-direction: column;
+		height:150%;
+	}
+	
+	.test > div {
+		height: 600px;
+		width: 350px;
+		
+		
+	}
+}
